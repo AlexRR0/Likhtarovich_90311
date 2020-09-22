@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Likhtarovich_90311.DAL.Entities
+{
+    public class Animal
+    {
+        public int AnimalId { get; set; } // id животного
+        public string AnimalName { get; set; } // название животного
+        public string Description { get; set; } // описание 
+        public int Age { get; set; } // возраст
+        public string Image { get; set; } // имя файла изображения
+
+        // Навигационные свойства
+        /// <summary>
+
+        public int AnimalGroupId { get; set; }
+        public AnimalGroup Group { get; set; }
+    }
+}
+
